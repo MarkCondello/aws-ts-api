@@ -6,7 +6,7 @@ import cities from '@functions/cities';
 const serverlessConfiguration: AWS = {
   service: 'aws-ts-api',
   frameworkVersion: '3',
-  plugins: ['serverless-esbuild'],
+  plugins: ['serverless-esbuild', 'serverless-offline',],
   provider: {
     name: 'aws',
     runtime: 'nodejs14.x',
